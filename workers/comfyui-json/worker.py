@@ -73,10 +73,7 @@ worker_config = WorkerConfig(
         HandlerConfig(
             route="/generate/stream",
             allow_parallel_requests=False,
-            max_queue_time=10.0,
-            benchmark_config=BenchmarkConfig(
-                dataset=benchmark_dataset,
-            )
+            max_queue_time=10.0
         )
     ],
     log_action_config=LogActionConfig(
